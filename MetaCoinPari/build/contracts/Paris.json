@@ -1,0 +1,110 @@
+{
+  "contractName": "Paris",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/Paris.sol\":\"Paris\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/Paris.sol\":{\"keccak256\":\"0x871533b094302d8e45253e7a19ea21ae485541ee9d25e559719f71124683aa5b\",\"urls\":[\"bzzr://7a0d2181841cc59b2d3f185b4d7ea8c958b95e09fc0e71d0a361955cbacb3e66\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058201e7c2782c7cd7a273db10ef7ba210c5625665a945b0f6ffa7379d7cc30b0b9680029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058201e7c2782c7cd7a273db10ef7ba210c5625665a945b0f6ffa7379d7cc30b0b9680029",
+  "sourceMap": "36:28:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:28:3;;;;;;;",
+  "deployedSourceMap": "36:28:3:-;;;;;",
+  "source": "pragma solidity >=0.4.25 <0.6.0;\r\n\r\ncontract Paris{\r\n\r\n\r\n\r\n\r\n\r\n}\r\n",
+  "sourcePath": "C:/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/Paris.sol",
+  "ast": {
+    "absolutePath": "/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/Paris.sol",
+    "exportedSymbols": {
+      "Paris": [
+        172
+      ]
+    },
+    "id": 173,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 171,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 172,
+        "linearizedBaseContracts": [
+          172
+        ],
+        "name": "Paris",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 173,
+        "src": "36:28:3"
+      }
+    ],
+    "src": "0:66:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/Paris.sol",
+    "exportedSymbols": {
+      "Paris": [
+        172
+      ]
+    },
+    "id": 173,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 171,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 172,
+        "linearizedBaseContracts": [
+          172
+        ],
+        "name": "Paris",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 173,
+        "src": "36:28:3"
+      }
+    ],
+    "src": "0:66:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2019-06-04T18:23:45.751Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
