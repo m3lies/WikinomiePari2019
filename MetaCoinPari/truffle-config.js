@@ -1,4 +1,5 @@
-/**
+/*
+/!**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
  * compilation and testing. Uncomment the ones you need or modify
@@ -16,7 +17,7 @@
  * public/private key pairs. If you're publishing your code to GitHub make sure you load this
  * phrase from a file you've .gitignored so it doesn't accidentally become public.
  *
- */
+ *!/
 
 // const HDWalletProvider = require('truffle-hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
@@ -25,7 +26,7 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-  /**
+  /!**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
    * will spin up a development blockchain for you on port 9545 when you
@@ -33,7 +34,7 @@ module.exports = {
    * network from the command line, e.g
    *
    * $ truffle test --network <network-name>
-   */
+   *!/
 
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
@@ -95,5 +96,30 @@ module.exports = {
       //  evmVersion: "byzantium"
       // }
     }
+  }
+}
+*/
+var HDWalletProvider = require("truffle-hdwallet-provider");
+var mnemonic = "";
+
+var ropsten = "";
+
+module.exports = {
+  networks: {
+
+    ganache: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*" // Match any network id
+    },
+
+    ropsten: {
+      network_id: 3,
+      provider: function() {
+        return new HDWalletProvider(mnemonic, ropsten, 0)
+      },
+      gas: 4700000
+    }
+
   }
 }
