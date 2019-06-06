@@ -91,11 +91,11 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalanceInEth\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"receiver\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"sendCoin\",\"outputs\":[{\"name\":\"sufficient\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/MetaCoin.sol\":\"MetaCoin\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/ConvertLib.sol\":{\"keccak256\":\"0x64971bee9ef0af43109f80ffc9912eaea745c8d8ba775fe42d27e24ad307dab9\",\"urls\":[\"bzzr://0cf7c2951278cb5e786ca88a13e11558cd30b1f49f0662b55bc346f0c2ecd9ed\"]},\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/MetaCoin.sol\":{\"keccak256\":\"0x2102dea87e3c4cbb5b7e07513916a5e7226525078b88aa6d9ce0ddb0cb760ba8\",\"urls\":[\"bzzr://7907d1d4f1f1b82f5869a298e2b587d23a1733268a13c5f26dea81b82ad7a343\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506127106000803273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610426806100656000396000f3fe608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637bd703e81461005c57806390b98a11146100c1578063f8b2cb4f14610134575b600080fd5b34801561006857600080fd5b506100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610199565b6040518082815260200191505060405180910390f35b3480156100cd57600080fd5b5061011a600480360360408110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610259565b604051808215151515815260200191505060405180910390f35b34801561014057600080fd5b506101836004803603602081101561015757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103b2565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d6101be846103b2565b60026040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15801561021757600080fd5b505af415801561022b573d6000803e3d6000fd5b505050506040513d602081101561024157600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102aa57600090506103ac565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea165627a7a723058208c8e88c247367e71770ac6e54a2c04a5a3ab0e3a9662db603e3ab495c0697e3b0029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637bd703e81461005c57806390b98a11146100c1578063f8b2cb4f14610134575b600080fd5b34801561006857600080fd5b506100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610199565b6040518082815260200191505060405180910390f35b3480156100cd57600080fd5b5061011a600480360360408110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610259565b604051808215151515815260200191505060405180910390f35b34801561014057600080fd5b506101836004803603602081101561015757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103b2565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d6101be846103b2565b60026040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15801561021757600080fd5b505af415801561022b573d6000803e3d6000fd5b505050506040513d602081101561024157600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102aa57600090506103ac565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea165627a7a723058208c8e88c247367e71770ac6e54a2c04a5a3ab0e3a9662db603e3ab495c0697e3b0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalanceInEth\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"receiver\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"sendCoin\",\"outputs\":[{\"name\":\"sufficient\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/MetaCoin.sol\":\"MetaCoin\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/ConvertLib.sol\":{\"keccak256\":\"0x64971bee9ef0af43109f80ffc9912eaea745c8d8ba775fe42d27e24ad307dab9\",\"urls\":[\"bzzr://0cf7c2951278cb5e786ca88a13e11558cd30b1f49f0662b55bc346f0c2ecd9ed\"]},\"/C/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/MetaCoin.sol\":{\"keccak256\":\"0x2102dea87e3c4cbb5b7e07513916a5e7226525078b88aa6d9ce0ddb0cb760ba8\",\"urls\":[\"bzzr://7907d1d4f1f1b82f5869a298e2b587d23a1733268a13c5f26dea81b82ad7a343\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506127106000803273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506103cd806100656000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80637bd703e81461004657806390b98a111461009e578063f8b2cb4f14610104575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061015c565b6040518082815260200191505060405180910390f35b6100ea600480360360408110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610200565b604051808215151515815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610359565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d61018184610359565b60026040518363ffffffff1660e01b8152600401808381526020018281526020019250505060206040518083038186803b1580156101be57600080fd5b505af41580156101d2573d6000803e3d6000fd5b505050506040513d60208110156101e857600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102515760009050610353565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea165627a7a723058202398d93118673af0a8c85b8d77188857147ffd610e1e306e7ad071d9871307720029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80637bd703e81461004657806390b98a111461009e578063f8b2cb4f14610104575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061015c565b6040518082815260200191505060405180910390f35b6100ea600480360360408110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610200565b604051808215151515815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610359565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d61018184610359565b60026040518363ffffffff1660e01b8152600401808381526020018281526020019250505060206040518083038186803b1580156101be57600080fd5b505af41580156101d2573d6000803e3d6000fd5b505050506040513d60208110156101e857600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102515760009050610353565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea165627a7a723058202398d93118673af0a8c85b8d77188857147ffd610e1e306e7ad071d9871307720029",
   "sourceMap": "333:710:1:-;;;475:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;475:58:1;523:5;501:8;:19;510:9;501:19;;;;;;;;;;;;;;;:27;;;;333:710;;;;;;",
-  "deployedSourceMap": "333:710:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;825:119;;8:9:-1;5:2;;;30:1;27;20:12;5:2;825:119:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;825:119:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;538:270;;8:9:-1;5:2;;;30:1;27;20:12;5:2;538:270:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;538:270:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;949:91;;8:9:-1;5:2;;;30:1;27;20:12;5:2;949:91:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;949:91:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;825:119;884:4;901:10;:18;920:16;931:4;920:10;:16::i;:::-;937:1;901:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;901:38:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;901:38:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;901:38:1;;;;;;;;;;;;;;;;894:45;;825:119;;;:::o;538:270::-;602:15;651:6;628:8;:20;637:10;628:20;;;;;;;;;;;;;;;;:29;624:47;;;666:5;659:12;;;;624:47;700:6;676:8;:20;685:10;676:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;733:6;711:8;:18;720:8;711:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;770:8;749:38;;758:10;749:38;;;780:6;749:38;;;;;;;;;;;;;;;;;;799:4;792:11;;538:270;;;;;:::o;949:91::-;1003:4;1021:8;:14;1030:4;1021:14;;;;;;;;;;;;;;;;1014:21;;949:91;;;:::o",
+  "deployedSourceMap": "333:710:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;333:710:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;825:119;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;825:119:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;538:270;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;538:270:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;949:91;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;949:91:1;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;825:119;884:4;901:10;:18;920:16;931:4;920:10;:16::i;:::-;937:1;901:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;901:38:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;901:38:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;901:38:1;;;;;;;;;;;;;;;;894:45;;825:119;;;:::o;538:270::-;602:15;651:6;628:8;:20;637:10;628:20;;;;;;;;;;;;;;;;:29;624:47;;;666:5;659:12;;;;624:47;700:6;676:8;:20;685:10;676:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;733:6;711:8;:18;720:8;711:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;770:8;749:38;;758:10;749:38;;;780:6;749:38;;;;;;;;;;;;;;;;;;799:4;792:11;;538:270;;;;;:::o;949:91::-;1003:4;1021:8;:14;1030:4;1021:14;;;;;;;;;;;;;;;;1014:21;;949:91;;;:::o",
   "source": "pragma solidity >=0.4.25 <0.6.0;\r\n\r\nimport \"./ConvertLib.sol\";\r\n\r\n// This is just a simple example of a coin-like contract.\r\n// It is not standards compatible and cannot be expected to talk to other\r\n// coin/token contracts. If you want to create a standards-compliant\r\n// token, see: https://github.com/ConsenSys/Tokens. Cheers!\r\n\r\ncontract MetaCoin {\r\n\tmapping (address => uint) balances;\r\n\r\n\tevent Transfer(address indexed _from, address indexed _to, uint256 _value);\r\n\r\n\tconstructor() public {\r\n\t\tbalances[tx.origin] = 10000;\r\n\t}\r\n\r\n\tfunction sendCoin(address receiver, uint amount) public returns(bool sufficient) {\r\n\t\tif (balances[msg.sender] < amount) return false;\r\n\t\tbalances[msg.sender] -= amount;\r\n\t\tbalances[receiver] += amount;\r\n\t\temit Transfer(msg.sender, receiver, amount);\r\n\t\treturn true;\r\n\t}\r\n//testCommit\r\n\tfunction getBalanceInEth(address addr) public view returns(uint){\r\n\t\treturn ConvertLib.convert(getBalance(addr),2);\r\n\t}\r\n\r\n\tfunction getBalance(address addr) public view returns(uint) {\r\n\t\treturn balances[addr];\r\n\t}\r\n}\r\n",
   "sourcePath": "C:/Users/melan/Documents/Projects_Truffle/WikinomiePari2019/MetaCoinPari/contracts/MetaCoin.sol",
   "ast": {
@@ -327,7 +327,7 @@
                           "name": "tx",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 199,
+                          "referencedDeclaration": 226,
                           "src": "510:2:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_transaction",
@@ -458,7 +458,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 187,
+                          "referencedDeclaration": 214,
                           "src": "637:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -572,7 +572,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 187,
+                          "referencedDeclaration": 214,
                           "src": "685:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -714,7 +714,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 187,
+                          "referencedDeclaration": 214,
                           "src": "758:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1525,7 +1525,7 @@
                           "name": "tx",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 199,
+                          "referencedDeclaration": 226,
                           "src": "510:2:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_transaction",
@@ -1656,7 +1656,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 187,
+                          "referencedDeclaration": 214,
                           "src": "637:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1770,7 +1770,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 187,
+                          "referencedDeclaration": 214,
                           "src": "685:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1912,7 +1912,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 187,
+                          "referencedDeclaration": 214,
                           "src": "758:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2496,11 +2496,20 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
   },
-  "networks": {},
-  "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-04T18:23:45.742Z",
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {
+        "ConvertLib": "0xFcF0eD33E8Ce57553d7f054BfAE57375f16461ba"
+      },
+      "address": "0x0EE881D7398165cBBF7C9f274fB00AD09C317af4",
+      "transactionHash": "0xd1b67ef8f5fff62159c5271c35fd3a581c9e2e6e27f6502904886cfe9ddac556"
+    }
+  },
+  "schemaVersion": "3.0.10",
+  "updatedAt": "2019-06-06T09:04:57.321Z",
   "devdoc": {
     "methods": {}
   },
