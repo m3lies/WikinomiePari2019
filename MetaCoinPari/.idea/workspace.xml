@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9019989-12c5-44f6-9ea0-51268ede4998" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/contracts/ConvertLib.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ConvertLib.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/truffle-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle-config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -92,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/truffle-config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="102" column="92" selection-start-line="102" selection-start-column="92" selection-end-line="102" selection-end-column="92" />
+            <state relative-caret-position="94">
+              <caret line="104" column="68" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -215,16 +214,15 @@
       <workItem from="1559765309034" duration="56000" />
       <workItem from="1559766322385" duration="387000" />
       <workItem from="1559766733756" duration="2095000" />
-      <workItem from="1559811453057" duration="2422000" />
+      <workItem from="1559811453057" duration="4081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17452000" />
+    <option name="totallyTimeSpent" value="19111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16965227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -312,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/truffle-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="92" selection-start-line="102" selection-start-column="92" selection-end-line="102" selection-end-column="92" />
+        <state relative-caret-position="94">
+          <caret line="104" column="68" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
