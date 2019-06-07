@@ -99,15 +99,15 @@ module.exports = {
   }
 }
 */
-var HDWalletProvider = require("truffle-hdwallet-provider");
+/* var HDWalletProvider = require("truffle-hdwallet-provider");
 var mnemonic = "";
 
-var ropsten = "";
+var ropsten = ""; */
 
 module.exports = {
   networks: {
 
-    ganache: {
+/*     ganache: {
       host: "127.0.0.1",
       port: 7545,
       network_id: "*" // Match any network id
@@ -119,7 +119,7 @@ module.exports = {
         return new HDWalletProvider(mnemonic, ropsten, 0)
       },
       gas: 4700000
-    }
+    } */
 
   }
 }
