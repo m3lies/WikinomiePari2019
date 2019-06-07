@@ -129,9 +129,6 @@ class TeamB extends Component {
         )
 
     }
-
-
-
 }
 
 export default TeamB;
