@@ -4,7 +4,7 @@ let getWeb3 = new Promise(function(resolve, reject) {
     // already injected
     window.addEventListener('load', function() {
         var results
-        var web3 = window.web3
+        var web3 = window.ethereum
         // Checking if Web3 has been injected by the browser MetaMask
         if (typeof web3 !== 'undefined') {
             // Use MetaMask's provider.
