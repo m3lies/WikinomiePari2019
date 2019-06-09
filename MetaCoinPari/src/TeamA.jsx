@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container,Row,Col} from 'react-bootstrap';
+
 import getWeb3 from './utils/getWeb3.js';
 import BettingContract from './contracts/Paris.json';
 import './App.css';

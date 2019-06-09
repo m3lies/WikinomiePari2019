@@ -21,8 +21,11 @@ class App extends Component {
         //this.setState is used to edit the state variables
         this.setState({
           address: acc[0],
-          web3: results.web3
+          web3: results.web3,
         })
+        console.log(acc)
+
+
       });
     }).catch( () => {
       //If no web3 provider was found, log it in the console
