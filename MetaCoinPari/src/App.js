@@ -24,6 +24,9 @@ class App extends Component {
           web3: results.web3
         })
       });
+
+
+
     }).catch( () => {
       //If no web3 provider was found, log it in the console
       console.log('Error finding web3.')
