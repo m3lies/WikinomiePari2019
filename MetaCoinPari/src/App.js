@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Container,Row,Col} from 'react-bootstrap';
 import getWeb3 from './utils/getWeb3.js';
-//import TeamA from './TeamA.jsx';
-//import TeamB from './TeamB.jsx';
+import {Container,Row,Col} from 'react-bootstrap';
+import TeamA from './TeamA.jsx';
+import TeamB from './TeamB.jsx';
 class App extends Component {
   constructor(){
     super();
@@ -13,7 +13,7 @@ class App extends Component {
       address: '',
     };
   }
-componentDidMount() {
+  componentDidMount() {
     getWeb3.then(results => {
       /*After getting web3, we save the informations of the web3 user by
       editing the state variables of the component */
@@ -21,36 +21,39 @@ componentDidMount() {
         //this.setState is used to edit the state variables
         this.setState({
           address: acc[0],
-          web3: results.web3
+          web3: results.web3,
         })
+        console.log(acc)
+
+
       });
     }).catch( () => {
       //If no web3 provider was found, log it in the console
       console.log('Error finding web3.')
     })
   }
-render() {
+  render() {
     return (
-      <div className="App">
-<header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Bet-eth</h1>
-        </header>
-        <div>
-          Welcome on my Ethereum Betting website <br/>
-        Your Wallet address is {this.state.address}
-        </div>
-        {/*We define a grid*/}
-        <Container>
-          {/*corresponding to class="row"*/}
-          <Row>
-            {/* we define the two columns. The bootstrap grid is divided by 12
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-title">MetaCoinPari</h1>
+          </header>
+          <div>
+            Bienvenue sur notre site "MetaCoinPari" <br/>
+            Votre adresse est :  {this.state.address}
+          </div>
+          {/*We define a grid*/}
+          <Container>
+            {/*corresponding to class="row"*/}
+            <Row>
+              {/* we define the two columns. The bootstrap grid is divided by 12
             parts so if we want two columns, they will take 6 parts each */}
-            <Col xs={6} sm={6}>A {/*We will import Team A component here */}</Col>
-            <Col xs={6} sm={6}>B {/*We will import Team B component here */}</Col>
-          </Row>
-        </Container>
-</div>
+              <Col xs={6} sm={6}><TeamA/> {/*We will import Team A component here */}</Col>
+              <Col xs={6} sm={6}><TeamB/> {/*We will import Team B component here */}</Col>
+            </Row>
+          </Container>
+        </div>
     );
   }
 }

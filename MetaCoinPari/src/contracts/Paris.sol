@@ -1,5 +1,6 @@
 pragma solidity >=0.4.25 <0.6.0;
 
+import "./ConvertLib.sol";
 
 contract Paris{
 
@@ -58,8 +59,8 @@ contract Paris{
         //We have to create a temporary in memory array with fixed size
         //Let's choose 1000
         uint256 count = 0; // This is the count for the array of winners
-        uint256 PerdantPari = 0; //This will take the value of all losers bet
-        uint256 GagnantPari = 0; //This will take the value of all winners bet
+        uint256 LoserBet = 0; //This will take the value of all losers bet
+        uint256 WinnerBet = 0; //This will take the value of all winners bet
         address add;
         uint256 bet;
         address payable playerAddress;
@@ -75,12 +76,12 @@ contract Paris{
         }
         //We define which bet sum is the Loser one and which one is the winner
         if ( teamWinner == 1){
-            PerdantPari = totalBetTwo;
-            GagnantPari = totalBetOne;
+            LoserBet = totalBetTwo;
+            WinnerBet = totalBetOne;
         }
         else{
-            PerdantPari = totalBetOne;
-            GagnantPari = totalBetTwo;
+            LoserBet = totalBetOne;
+            WinnerBet = totalBetTwo;
         }
         //We loop through the array of winners, to give ethers to the winners
         for(uint256 j = 0; j < count; j++){
@@ -89,13 +90,13 @@ contract Paris{
                 add = winners[j];
             bet = playerInfo[add].amountBet;
             //Transfer the money to the user
-            winners[j].transfer((bet*(10000+(PerdantPari*10000/GagnantPari)))/10000 );
+            winners[j].transfer((bet*(10000+(LoserBet*10000/WinnerBet)))/10000 );
         }
 
         delete playerInfo[playerAddress]; // Delete all the players
         parieurs.length = 0; // Delete all the players array
-        PerdantPari = 0; //reinitialize the bets
-        GagnantPari = 0;
+        LoserBet = 0; //reinitialize the bets
+        WinnerBet = 0;
         totalBetOne = 0;
         totalBetTwo = 0;
     }
@@ -107,5 +108,27 @@ contract Paris{
     function AmountTwo() public view returns(uint256){
         return totalBetTwo;
     }
-
+//
+//    event Transfer(address indexed _from, address indexed _to, uint256 _value);
+//
+//
+//    constructor() public {
+//        balances[tx.origin] = 10000;
+//    }
+//
+//    function sendCoin(address receiver, uint amount) public returns(bool sufficient) {
+//        if (balances[msg.sender] < amount) return false;
+//        balances[msg.sender] -= amount;
+//        balances[receiver] += amount;
+//        emit Transfer(msg.sender, receiver, amount);
+//        return true;
+//    }
+//    //testCommit
+//    function getBalanceInEth(address addr) public view returns(uint){
+//        return ConvertLib.convert(getBalance(addr),2);
+//    }
+//
+//    function getBalance(address addr) public view returns(uint) {
+//        return balances[addr];
+//    }
 }
