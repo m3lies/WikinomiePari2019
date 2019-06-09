@@ -120,7 +120,7 @@ render(){
                 <span className="input-group-addon">ETH</span>
             </div>
             <br/>
-            <button onClick={this.Bet}>Paris</button>
+            <button onClick={this.Bet}>Pariez</button>
             <br/>
             <hr/>
             <button onClick={this.MakeWin}> Faire gagner cette équipe</button>

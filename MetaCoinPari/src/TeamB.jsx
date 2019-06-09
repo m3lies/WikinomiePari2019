@@ -113,7 +113,7 @@ class TeamB extends Component {
         return(
             <div>
                 <h3>Team B</h3>
-                <h4> Total amount : {this.state.Amount} ETH</h4>
+                <h4> Montant total : {this.state.Amount} ETH</h4>
                 <hr/>
                 <h5> Entrez un montant à parier</h5>
                 <div className="input-group">
