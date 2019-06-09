@@ -112,9 +112,9 @@ class TeamB extends Component {
         return(
             <div>
                 <h3>Team B</h3>
-                <h4> Total amount : {this.state.Amount} ETH</h4>
+                <h4> Montant total : {this.state.Amount} ETH</h4>
                 <hr/>
-                <h5> Enter an amount to bet</h5>
+                <h5> Entrez un montant à parier</h5>
                 <div className="input-group">
                     <input type="text" className="form-control" onChange={this.handleInputChange} required pattern="[0-9]*[.,][0-9]*"/>
                     <span className="input-group-addon">ETH</span>
@@ -123,7 +123,7 @@ class TeamB extends Component {
                 <button onClick={this.Bet}>Bet</button>
                 <br/>
                 <hr/>
-                <button onClick={this.MakeWin}> Make this team win</button>
+                <button onClick={this.MakeWin}> Faire gagner cette équipe</button>
             </div>
         )
 
